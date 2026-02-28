@@ -1,5 +1,5 @@
 [package]
-name = "font-kit"
+name = "zed-font-kit"
 version = "0.14.2"
 authors = ["Patrick Walton <pcwalton@mimiga.net>"]
 description = "A cross-platform font loading library"
@@ -54,7 +54,7 @@ features = ["dwrite", "minwindef", "sysinfoapi", "winbase", "winnt"]
 [target.'cfg(any(target_os = "macos", target_os = "ios"))'.dependencies]
 core-foundation = "0.10"
 core-graphics = "0.24"
-core-text = "21.1.0"
+core-text = "20.1.0"
 
 [target.'cfg(not(any(target_family = "windows", target_os = "macos", target_os = "ios")))'.dependencies]
 freetype-sys = "0.20"
